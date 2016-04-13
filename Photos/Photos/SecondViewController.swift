@@ -10,13 +10,21 @@ import UIKit
 
 class SecondViewController: UIViewController {
     
-    @IBOutlet weak var dImageView: UIImageView!
+    var toPass:Photo!
     
-    var photoToShow = PhotosCollectionViewController
+    @IBOutlet weak var userNameLabel: UILabel!
+    
+    @IBOutlet var dImageView: UIView!
+    
+    @IBOutlet weak var dUserNameLabel: UILabel!
+    
+    @IBOutlet weak var dDateLabel: UILabel!
+    
+    @IBOutlet weak var dLikesLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        PhotosCollectionViewController.loadImageForCell(PhotosCollectionViewController.photos)
     }
     
     

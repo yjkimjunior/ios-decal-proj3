@@ -33,6 +33,7 @@ class PhotosCollectionViewController: UICollectionViewController {
      * IMPLEMENT ANY COLLECTION VIEW DELEGATE METHODS YOU FIND NECESSARY
      * Examples include cellForItemAtIndexPath, numberOfSections, etc.
      */
+
     
     override func collectionView(collectionView: UICollectionView,
                           numberOfItemsInSection section: Int) -> Int {
@@ -52,6 +53,9 @@ class PhotosCollectionViewController: UICollectionViewController {
         return cell
     }
     
+    var topPhoto:Photo?
+    
+    
     /* Creates a session from a photo's url to download data to instantiate a UIImage. 
        It then sets this as the imageView's image. */
     func loadImageForCell(photo: Photo, imageView: UIImageView) {
@@ -64,6 +68,7 @@ class PhotosCollectionViewController: UICollectionViewController {
             var image : UIImage?
             if data != nil {
                 photo.imageData = data
+                self.topPhoto = photo
                 image = UIImage(data: data!)!
             }
             
@@ -78,6 +83,14 @@ class PhotosCollectionViewController: UICollectionViewController {
     func didLoadPhotos(photos: [Photo]) {
         self.photos = photos
         self.photosCollectionView!.reloadData()
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    
+        let svc = segue.destinationViewController as! SecondViewController
+        
+        svc.toPass = topPhoto
+        
     }
     
 }

@@ -58,7 +58,7 @@
                                     <outlet property="imageViewLabel" destination="HAe-xR-ulQ" id="inN-UJ-QZm"/>
                                     <outlet property="likesLabel" destination="EVE-Qs-1AJ" id="Muv-zL-Ssk"/>
                                     <outlet property="userNameLabel" destination="gmS-dO-YCl" id="Qu1-Fh-ysj"/>
-                                    <segue destination="CNg-L1-ejQ" kind="show" id="3Zz-oz-Fvz"/>
+                                    <segue destination="CNg-L1-ejQ" kind="show" identifier="showMore" id="3Zz-oz-Fvz"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -120,7 +120,11 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="dImageView" destination="9tr-PO-dQT" id="JjX-Ay-sty"/>
+                        <outlet property="dDateLabel" destination="1Py-0Z-pcK" id="8DR-2I-Imp"/>
+                        <outlet property="dImageView" destination="drP-V5-16a" id="0gj-qi-TJ6"/>
+                        <outlet property="dLikesLabel" destination="woJ-0n-29h" id="cSO-gQ-0Wv"/>
+                        <outlet property="dUserNameLabel" destination="1Py-0Z-pcK" id="Jsg-R9-7e7"/>
+                        <outlet property="userNameLabel" destination="Xzk-Re-ovy" id="oUk-C0-Jo3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Wr-Lu-fE9" userLabel="First Responder" sceneMemberID="firstResponder"/>
