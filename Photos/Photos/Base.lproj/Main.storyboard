@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--PhotosCollectionViewController-->
@@ -112,15 +113,39 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VFh-4D-vsV">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="veV-re-WvB">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="GyP-df-zLA">
+                                            <connections>
+                                                <segue destination="xYU-x8-93U" kind="show" id="09x-1S-O8T"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Q9-QV-rh3">
+                                <rect key="frame" x="444" y="270" width="39" height="30"/>
+                                <state key="normal" title="Heart"/>
+                                <connections>
+                                    <action selector="heartButton:" destination="CNg-L1-ejQ" eventType="touchUpInside" id="uYi-wG-vL5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="VFh-4D-vsV" firstAttribute="leading" secondItem="drP-V5-16a" secondAttribute="leadingMargin" constant="-20" id="1ry-at-3Eh"/>
                             <constraint firstItem="haC-lH-vIa" firstAttribute="top" secondItem="KZS-7o-mtt" secondAttribute="bottom" constant="48" id="22q-qc-NVP"/>
+                            <constraint firstItem="6Q9-QV-rh3" firstAttribute="leading" secondItem="KZS-7o-mtt" secondAttribute="trailing" constant="60" id="2vP-At-YzJ"/>
                             <constraint firstItem="KZS-7o-mtt" firstAttribute="centerX" secondItem="drP-V5-16a" secondAttribute="centerX" id="7VL-1u-k4E"/>
+                            <constraint firstItem="6Q9-QV-rh3" firstAttribute="top" secondItem="VFh-4D-vsV" secondAttribute="bottom" constant="226" id="ABv-6d-jHl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VFh-4D-vsV" secondAttribute="trailing" constant="-20" id="DzR-YT-ICo"/>
                             <constraint firstItem="EZX-d1-2FU" firstAttribute="centerX" secondItem="drP-V5-16a" secondAttribute="centerX" id="Iha-cf-6AT"/>
                             <constraint firstItem="0yf-YH-7Uf" firstAttribute="top" secondItem="EZX-d1-2FU" secondAttribute="bottom" constant="142" id="MZb-Uv-F84"/>
                             <constraint firstItem="KZS-7o-mtt" firstAttribute="top" secondItem="fam-Rs-0XQ" secondAttribute="bottom" constant="24" id="TBX-3Y-2l6"/>
                             <constraint firstItem="EZX-d1-2FU" firstAttribute="top" secondItem="tjQ-ZF-bzo" secondAttribute="bottom" constant="25" id="WFL-Zf-4f6"/>
+                            <constraint firstItem="VFh-4D-vsV" firstAttribute="top" secondItem="drP-V5-16a" secondAttribute="topMargin" id="aJC-uF-m9h"/>
                             <constraint firstItem="tjQ-ZF-bzo" firstAttribute="top" secondItem="haC-lH-vIa" secondAttribute="bottom" constant="22" id="mZT-d5-2lI"/>
                             <constraint firstItem="haC-lH-vIa" firstAttribute="centerX" secondItem="drP-V5-16a" secondAttribute="centerX" id="mco-qb-DJ7"/>
                             <constraint firstItem="tjQ-ZF-bzo" firstAttribute="centerX" secondItem="drP-V5-16a" secondAttribute="centerX" id="oGL-uc-wzH"/>
@@ -136,7 +161,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Wr-Lu-fE9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1105" y="139"/>
+            <point key="canvasLocation" x="1068" y="78"/>
         </scene>
     </scenes>
 </document>

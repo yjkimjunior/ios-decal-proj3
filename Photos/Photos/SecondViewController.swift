@@ -11,6 +11,7 @@ import UIKit
 class SecondViewController: UIViewController {
     
     var photo:Photo!
+    var likesCount:Int = 0
     
     @IBOutlet weak var dImageView: UIImageView!
     
@@ -20,6 +21,10 @@ class SecondViewController: UIViewController {
     
     @IBOutlet weak var dLikesLabel: UILabel!
     
+    @IBAction func heartButton(sender: AnyObject) {
+        likesCount += 1
+        dLikesLabel.text = String(likesCount)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,6 +36,8 @@ class SecondViewController: UIViewController {
             image = UIImage(data: data!)!
         }
         
+        likesCount = photo.likes
+        
         dImageView.image = image
         
         dUserNameLabel.text = photo.username
@@ -38,8 +45,4 @@ class SecondViewController: UIViewController {
         dLikesLabel.text = "Likes: " + String(photo.likes)
 
     }
-    
-    
-    
-
 }
