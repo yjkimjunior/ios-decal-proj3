@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3994AFFB1CBDE53200FAE2B3 /* InstaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3994AFFA1CBDE53200FAE2B3 /* InstaCollectionViewCell.swift */; };
+		3994B0051CBE20BC00FAE2B3 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3994B0041CBE20BC00FAE2B3 /* SecondViewController.swift */; };
 		3A1683901BE9B642009F39C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A16838F1BE9B642009F39C5 /* AppDelegate.swift */; };
 		3A1683921BE9B642009F39C5 /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1683911BE9B642009F39C5 /* PhotosCollectionViewController.swift */; };
 		3A1683951BE9B642009F39C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A1683931BE9B642009F39C5 /* Main.storyboard */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3994AFFA1CBDE53200FAE2B3 /* InstaCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstaCollectionViewCell.swift; sourceTree = "<group>"; };
+		3994B0041CBE20BC00FAE2B3 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondViewController.swift; path = ../SecondViewController.swift; sourceTree = "<group>"; };
 		3A16838C1BE9B641009F39C5 /* Photos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Photos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A16838F1BE9B642009F39C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A1683911BE9B642009F39C5 /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +64,7 @@
 		3A16838E1BE9B641009F39C5 /* Photos */ = {
 			isa = PBXGroup;
 			children = (
+				3994AFFA1CBDE53200FAE2B3 /* InstaCollectionViewCell.swift */,
 				3A1683A51BE9C54F009F39C5 /* API */,
 				3A1683A41BE9C548009F39C5 /* Views */,
 				3A1683A11BE9B70C009F39C5 /* Utils */,
@@ -84,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				3A1683911BE9B642009F39C5 /* PhotosCollectionViewController.swift */,
+				3994B0041CBE20BC00FAE2B3 /* SecondViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -170,7 +176,9 @@
 			files = (
 				3A1683921BE9B642009F39C5 /* PhotosCollectionViewController.swift in Sources */,
 				3A1683901BE9B642009F39C5 /* AppDelegate.swift in Sources */,
+				3994AFFB1CBDE53200FAE2B3 /* InstaCollectionViewCell.swift in Sources */,
 				3A1683A31BE9B717009F39C5 /* Utils.swift in Sources */,
+				3994B0051CBE20BC00FAE2B3 /* SecondViewController.swift in Sources */,
 				3A1683A71BE9C593009F39C5 /* InstagramAPI.swift in Sources */,
 				3A1683A91BE9C5A7009F39C5 /* Photo.swift in Sources */,
 			);
