@@ -10,11 +10,9 @@ import UIKit
 
 class SecondViewController: UIViewController {
     
-    var toPass:Photo!
+    var photo:Photo!
     
-    @IBOutlet weak var userNameLabel: UILabel!
-    
-    @IBOutlet var dImageView: UIView!
+    @IBOutlet weak var dImageView: UIImageView!
     
     @IBOutlet weak var dUserNameLabel: UILabel!
     
@@ -25,6 +23,20 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let data = NSData(contentsOfURL: NSURL(string: photo.url)!)
+        
+        var image : UIImage?
+        if data != nil {
+            photo.imageData = data
+            image = UIImage(data: data!)!
+        }
+        
+        dImageView.image = image
+        
+        dUserNameLabel.text = photo.username
+        dDateLabel.text = "Added: " + photo.date
+        dLikesLabel.text = "Likes: " + String(photo.likes)
+
     }
     
     

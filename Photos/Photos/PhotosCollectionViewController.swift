@@ -89,7 +89,7 @@ class PhotosCollectionViewController: UICollectionViewController {
     
         let svc = segue.destinationViewController as! SecondViewController
         
-        svc.toPass = topPhoto
+        svc.photo = topPhoto
         
     }
     

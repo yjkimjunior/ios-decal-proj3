@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--PhotosCollectionViewController-->
@@ -88,23 +87,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9tr-PO-dQT">
-                                <rect key="frame" x="163" y="43" width="275" height="267"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KZS-7o-mtt">
+                                <rect key="frame" x="174" y="44" width="253" height="256"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="256" id="J40-C8-JDY"/>
+                                    <constraint firstAttribute="width" constant="253" id="nmI-IX-uXn"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="userName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xzk-Re-ovy">
-                                <rect key="frame" x="261" y="361" width="79" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjQ-ZF-bzo">
+                                <rect key="frame" x="283" y="391" width="35" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Py-0Z-pcK">
-                                <rect key="frame" x="305" y="398" width="35" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZX-d1-2FU">
+                                <rect key="frame" x="283" y="437" width="34" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="woJ-0n-29h">
-                                <rect key="frame" x="306" y="440" width="34" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="userName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haC-lH-vIa">
+                                <rect key="frame" x="239" y="348" width="79" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -112,19 +115,23 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="9tr-PO-dQT" firstAttribute="centerX" secondItem="drP-V5-16a" secondAttribute="centerX" id="Bzx-5P-REn"/>
-                            <constraint firstItem="0yf-YH-7Uf" firstAttribute="top" secondItem="9tr-PO-dQT" secondAttribute="bottom" constant="290" id="EMs-WQ-UMa"/>
-                            <constraint firstItem="9tr-PO-dQT" firstAttribute="top" secondItem="fam-Rs-0XQ" secondAttribute="bottom" constant="23" id="EnZ-Q4-evG"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="9tr-PO-dQT" secondAttribute="trailing" constant="142" id="UiJ-JD-Mgm"/>
-                            <constraint firstItem="9tr-PO-dQT" firstAttribute="leading" secondItem="drP-V5-16a" secondAttribute="leadingMargin" constant="143" id="cwg-gE-wQs"/>
+                            <constraint firstItem="haC-lH-vIa" firstAttribute="top" secondItem="KZS-7o-mtt" secondAttribute="bottom" constant="48" id="22q-qc-NVP"/>
+                            <constraint firstItem="KZS-7o-mtt" firstAttribute="centerX" secondItem="drP-V5-16a" secondAttribute="centerX" id="7VL-1u-k4E"/>
+                            <constraint firstItem="EZX-d1-2FU" firstAttribute="centerX" secondItem="drP-V5-16a" secondAttribute="centerX" id="Iha-cf-6AT"/>
+                            <constraint firstItem="0yf-YH-7Uf" firstAttribute="top" secondItem="EZX-d1-2FU" secondAttribute="bottom" constant="142" id="MZb-Uv-F84"/>
+                            <constraint firstItem="KZS-7o-mtt" firstAttribute="top" secondItem="fam-Rs-0XQ" secondAttribute="bottom" constant="24" id="TBX-3Y-2l6"/>
+                            <constraint firstItem="EZX-d1-2FU" firstAttribute="top" secondItem="tjQ-ZF-bzo" secondAttribute="bottom" constant="25" id="WFL-Zf-4f6"/>
+                            <constraint firstItem="tjQ-ZF-bzo" firstAttribute="top" secondItem="haC-lH-vIa" secondAttribute="bottom" constant="22" id="mZT-d5-2lI"/>
+                            <constraint firstItem="haC-lH-vIa" firstAttribute="centerX" secondItem="drP-V5-16a" secondAttribute="centerX" id="mco-qb-DJ7"/>
+                            <constraint firstItem="tjQ-ZF-bzo" firstAttribute="centerX" secondItem="drP-V5-16a" secondAttribute="centerX" id="oGL-uc-wzH"/>
+                            <constraint firstItem="haC-lH-vIa" firstAttribute="top" secondItem="KZS-7o-mtt" secondAttribute="bottom" constant="48" id="rDQ-o5-94f"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="dDateLabel" destination="1Py-0Z-pcK" id="8DR-2I-Imp"/>
-                        <outlet property="dImageView" destination="drP-V5-16a" id="0gj-qi-TJ6"/>
-                        <outlet property="dLikesLabel" destination="woJ-0n-29h" id="cSO-gQ-0Wv"/>
-                        <outlet property="dUserNameLabel" destination="1Py-0Z-pcK" id="Jsg-R9-7e7"/>
-                        <outlet property="userNameLabel" destination="Xzk-Re-ovy" id="oUk-C0-Jo3"/>
+                        <outlet property="dDateLabel" destination="tjQ-ZF-bzo" id="mh7-sp-35r"/>
+                        <outlet property="dImageView" destination="KZS-7o-mtt" id="ecS-k9-KPh"/>
+                        <outlet property="dLikesLabel" destination="EZX-d1-2FU" id="9cz-vv-fvk"/>
+                        <outlet property="dUserNameLabel" destination="haC-lH-vIa" id="B6v-Jc-yqj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Wr-Lu-fE9" userLabel="First Responder" sceneMemberID="firstResponder"/>
